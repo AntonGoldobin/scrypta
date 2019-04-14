@@ -131,6 +131,24 @@ figure {
     font-size: 0;
     line-height: 0;
 }
+.crypton-vertion section.quote-back{
+    background-color: #111319;
+    background-image: url(../images/crypton/bg-descr.png);
+    background-position-x: left;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    padding: unset;
+    background-attachment: fixed;
+    font-style: italic;
+}
+.text-white{
+    color: white !important;
+}
+.thumb.quote img{
+    max-width: 80%;
+    object-fit: cover;
+}
 .thumb img,
 figure img{
 	float:left;
@@ -1035,7 +1053,7 @@ input[type="submit"].submit-btn.th-bg,
 [class*="btn-"].th-bg,
 [class*="btn-"].th-bg *,
 [class*="-btn"].th-bg *{
-  color: #fff !important;
+  color: #171921 !important;
 }
 .rounded-100{
   border-radius: 100px;

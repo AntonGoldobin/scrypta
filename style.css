@@ -301,10 +301,6 @@ section{
 .nav-outer.affix .logo {
     padding: 18px 0;
     max-width: 150px;
-    -o-transition:padding .5s ease-in-out, width .5s ease-in-out,
-    -ms-transition:padding .5s ease-in-out, width .5s ease-in-out,
-    -moz-transition:padding .5s ease-in-out, width .5s ease-in-out,
-    -webkit-transition:padding .5s ease-in-out, width .5s ease-in-out,
 }
 .nav-outer.affix .navigation ul.children li a {
     color: #818992;
@@ -392,7 +388,7 @@ section{
 .main-banner .banner-thumb img {
     max-width: 85%;
     position: absolute;
-    top: -110px;
+    /*top: -110px;*/
     right: 0;
     right: 0;
     -webkit-animation: bounce1 3s ease-in-out infinite;
@@ -407,7 +403,8 @@ section{
 }
 /******************************** Header 3 Css Start **********************************/
 .oscar-header-3 .logo{
-    
+    width: 20%;
+    padding-top: 13px;
 }
 /******************************** Featured Thumb Start **********************************/
 .featured-slider-section{
@@ -1036,8 +1033,12 @@ section{
 }
 .osr-team-thumb-2 figure{
     margin: 0 0 18px;
+    display: flex;
+    justify-content: center;
 }
 .osr-team-thumb-2 figure img{
+    height: 100px;
+    width: auto;
     opacity: 0.3;
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
@@ -1489,13 +1490,19 @@ section{
     left: auto;
     min-width: 780px;
 }
+.about-thumb .thumb-right {
+    position: absolute;
+    right: auto;
+    left: 0;
+    min-width: 780px;
+}
 .about-caption{
     float: left;
     width: 100%;
     padding: 111px 0 105px;
 }
 .about-caption .title{
-    font-size: 50px;
+    font-size: 35px;
     line-height: 60px;
     margin: 0 0 50px;
 }
@@ -1605,7 +1612,7 @@ footer.light-black-bg .widget_recent_entries ul li{
     z-index: 1;
     border-radius:5px; 
     position: relative;
-    background-color: #fff;
+    background-color: #22232e;
     padding:30px;
     margin: 70px 0;
     box-shadow: 0 5px 10px rgba(0,9,128,0.035), 0 7px 18px rgba(0,9,128,0.05);
@@ -1628,9 +1635,21 @@ section.fake-footer-inner .contact-section{
     margin: 0 0 20px;
 }
 .contact-section .form-control{
-    color: #383a42;
+    color: white;
     border-radius: 5px;
-    border: 1px solid #eaeaea;
+    border: 1px solid #8d94ac;
+}
+.input-devider ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+}
+
+.input-devider :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: white;
+}
+
+.input-devider ::-ms-input-placeholder { /* Microsoft Edge */
+    color: white;
 }
 .contact-form{
     float: left;

@@ -15,7 +15,7 @@ jQuery(document).ready(function($){
       });
     });
   /*=========================== MOBILE NAVIGATION SCRIPT */
-    if($('.main-menu nav').length){   
+    if($('.main-menu nav').length){
       $('.main-menu nav').meanmenu({
         meanMenuContainer: '.mobile-menu',
         meanScreenWidth: "991"
