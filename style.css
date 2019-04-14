@@ -104,13 +104,45 @@ section{
     z-index: 2;
     float: left;
     width: 100%;
-    padding: 50px 0 0;
+    padding: 10px 0 0;
     position: relative;
     transition: background .3s ease,box-shadow .3s ease, padding .4s ease;
     -o-transition: background .3s ease,box-shadow .3s ease, padding .4s ease;
     -ms-transition: background .3s ease,box-shadow .3s ease, padding .4s ease;
     -moz-transition: background .3s ease,box-shadow .3s ease, padding .4s ease;
     -webkit-transition: background .3s ease,box-shadow .3s ease, padding .4s ease;
+}
+.unix-row {
+    margin-bottom: -10px;
+    margin-top: 20px;
+}
+.affix .unix-row{
+    margin: unset;
+}
+.btn-unix{
+    background-color: #04e6b4;
+    border-radius: 9px;
+    padding: 0px 11px;
+    margin-left: 10px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.5s;
+    opacity: 1;
+}
+.btn-unix:hover{
+    transition: 0.5s;
+    opacity: 0.7;
+}
+.affix .unix-display{
+    display: none;
+}
+.unix-display{
+    display: block;
+}
+#unix-time{
+    color: #a8afcc;
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
 }
 .logo{
     margin: 0;
@@ -386,10 +418,9 @@ section{
 50%{-webkit-transform:translateY(-20px);transform:translateY(-20px);}
 }
 .main-banner .banner-thumb img {
-    max-width: 85%;
+    max-width: 120%;
     position: absolute;
-    /*top: -110px;*/
-    right: 0;
+    top: -110px;
     right: 0;
     -webkit-animation: bounce1 3s ease-in-out infinite;
     animation: bounce1 3s ease-in-out infinite;
